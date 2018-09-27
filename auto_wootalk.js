@@ -2,7 +2,7 @@ let SendFlag = false;
 let Interval = setInterval(()=>{
 	let len = document.getElementsByClassName("system").length;
 	if ((len >= 4) && !SendFlag) {
-		document.getElementById("messageInput").value = "台北男 27 妳好";
+		document.getElementById("messageInput").value = "輸入你想要的文字";
         sendMessage();
         SendFlag = true;
     } else if ((len === 5 || len === 7 || len === 9) && SendFlag) {
